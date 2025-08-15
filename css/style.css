@@ -1,0 +1,134 @@
+/* ================================================= */
+/* == FINAL ENHANCED THEME - VIBRANT WHITE & BLUE == */
+/* ================================================= */
+
+/* Main Body & Theme */
+body {
+    background-color: #FFFFFF; /* A crisp, pure white background */
+    color: #212529;           /* High-contrast dark charcoal text for readability */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Typography */
+.dashboard-title {
+    font-family: 'Playfair Display', serif;
+    color: #212529;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+    /* THE ENHANCEMENT: A strong but elegant blue underline */
+    border-bottom: 2px solid #0d6efd; 
+}
+
+/* Course Cards (Student & Instructor) */
+.course-card {
+    background-color: #f8f9fa; /* A very light gray to subtly lift cards off the background */
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    height: 100%;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.course-card .icon {
+    font-size: 2.5rem;
+    color: #C09F52; /* The elegant gold for the icon itself */
+    border: 2px solid #e9ecef; /* A subtle border */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+/* THE ENHANCEMENT: A beautiful hover effect using the blue accent */
+.course-card:hover .icon {
+    background-color: #0d6efd;
+    color: #FFFFFF;
+    border-color: #0d6efd;
+}
+
+.course-card .card-title {
+    font-family: 'Playfair Display', serif;
+    color: #212529;
+    font-size: 1.75rem;
+}
+
+.course-card .card-text {
+    color: #6c757d;
+    margin-bottom: 2rem;
+}
+
+.instructor-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-top: 1px solid #dee2e6;
+    padding-top: 1.5rem;
+    margin-top: auto;
+}
+
+.instructor-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #C09F52; /* Keep the elegant gold border for avatars */
+}
+
+.instructor-info span {
+    color: #212529;
+    font-weight: bold;
+}
+
+/* Student List (Instructor Dashboard) */
+.student-list-card {
+    background-color: #FFFFFF;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.student-list-card .list-title {
+    font-family: 'Playfair Display', serif;
+    color: #0d6efd; /* THE ENHANCEMENT: Use the strong blue for this title */
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 1rem;
+}
+
+.student-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.student-item:last-child {
+    border-bottom: none;
+}
+
+.student-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.student-item span {
+    color: #212529;
+    font-size: 1.1rem;
+}
